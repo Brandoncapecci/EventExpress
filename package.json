@@ -1,0 +1,19 @@
+{
+  "name": "EVENTS",
+  "version": "0.0.1",
+  "description": "Basic Express Site",
+  "main": "app.js",
+  "dependencies": {
+    "jade": "~0.35.0",
+    "aws-sdk": "~1.13.0",
+    "crypto-js": "~3.1.2-2",
+    "express": "~3.4.6",
+    "mongoose": "~3.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Capecci",
+  "license": "BSD-2-Clause"
+}

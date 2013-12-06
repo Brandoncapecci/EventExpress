@@ -1,0 +1,8 @@
+extend ../views/layout
+
+block content
+	h1 Signup
+	form.signup-form(accept-charset="utf-8", action="/signup", method="post")
+		input.email(name="email", type="text", placeholder="Email")
+		input.password(name="password", type="password", placeholder="Password")
+		button.submit(type="submit") Sign up

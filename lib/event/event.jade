@@ -1,0 +1,22 @@
+extend ../views/layout
+
+block content
+	h1 Event
+	h2= events.title
+	h2= events.location
+
+	- photos.forEach( function( single ){
+			img(src="https://s3.amazonaws.com/EventSite/"+single.id, width="100px")
+	- });
+
+	- comments.forEach( function( single ){
+			p= single.email + ": " + single.body
+	- });
+
+	form.photo-form(action="/create_photo", method="post", enctype="multipart/form-data")
+		input(type="file", name="image")
+		button(type="submit") Add Photo
+
+	form.comment-form(accept-charset="utf-8", action="/create_comment", method="post")
+		input.body(name="body", type="text", placeholder="Comment...")
+		button(type="submit") Add comment

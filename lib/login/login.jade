@@ -1,0 +1,8 @@
+extend ../views/layout
+
+block content
+	h1 Login	
+	form.login-form(accept-charset="utf-8", action="/login", method="post")
+		input.email(name="email", type="text", placeholder="Email")
+		input.password(name="password", type="password", placeholder="Password")
+		button.submit(type="submit") Login
